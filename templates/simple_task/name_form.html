@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'simple_task/home.html' %}
+{% block form %}
+  <h2>NAme and email</h2>
+
+<form action="" method="post">{% csrf_token %}
+<div>
+                    {{ form.as_p }}
+                    <button type="submit">Sent</button>
+                </div>
+    </form>
+{% endblock %}
+</body>
+</html>
