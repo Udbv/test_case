@@ -4,9 +4,9 @@ from django.shortcuts import render, redirect
 from django.views.generic.edit import FormView
 # Create your views here.
 def test(request):
-    name = "Udovenko"
+
     range_form = DateForm(request.POST or None)
-    forma = NameForm(request.POST or None)
+
    # date_chose = FormDate
     #time_chose = FormTime
 
@@ -16,19 +16,17 @@ def test(request):
         print(request.POST)
 
 
-    if forma.is_valid():
-        forma.save()
+
     if range_form.is_valid():
         range_form.save()
 
     return render(request, 'simple_task/home.html', locals())
 
 def post(self, request):
-    range_form = DateForm(request.POST or None)
-    if range_form.is_valid():
-        range_form.save()
-
-        return render(request, 'simple_task/home.html', locals(),{'form': range_form})
+    forma = NameForm(request.POST or None)
+    if forma.is_valid():
+        forma.save()
+        return render(request, 'simple_task/name_form.html', locals(),{'form': forma})
 
 
 class MyView(FormView):

@@ -7,15 +7,21 @@
 </head>
 <body>
 {% extends 'simple_task/home.html' %}
-{% block form %}
+{% block content %}
   <h2>NAme and email</h2>
 
-<form action="" method="post">{% csrf_token %}
-<div>
-                    {{ form.as_p }}
-                    <button type="submit">Sent</button>
+<form class="someclass" action="" method="post">{% csrf_token %}
+
+                <div>
+
+
+                        {{ time_chose }}
+
+
+                    <p>{{ date_chose }}</p>
+                 {{ forma.as_p}}
+                    <button type="submit">Sent user</button>
                 </div>
-    </form>
 {% endblock %}
 </body>
 </html>
