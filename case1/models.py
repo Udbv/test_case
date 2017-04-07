@@ -14,14 +14,10 @@ class Subscribers(models.Model):
 
 class Rangdate (models.Model):
 
-    date_start = models.DateField(blank=True, default='07,04,2017', null=True)
-    date_end = models.DateField(blank=True, default='12,04,2017', null=True)
-    time_start = models.IntegerField(default=9)
-    time_end = models.IntegerField(default=18)
-
-
-    class Meta:
-        order_with_respect_to = 'date_start'
+    date_start = models.DateField(blank=True, default='2017-04-07',  verbose_name='дата начала встречи' )
+    date_end = models.DateField(blank=True, default='2017-04-17', verbose_name='дата окончания  встречи')
+    time_start = models.IntegerField(default=9, verbose_name='время начала  встречи')
+    time_end = models.IntegerField(default=18, verbose_name='время окончания  встречи')
 
     def __str__(self):
 

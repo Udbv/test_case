@@ -13,23 +13,23 @@
   <h2>Home</h2>
     <form action="" method="post">{% csrf_token %}
 
+
                 <div>
+                 {{ range_form.as_p}}
+                    <button type="submit">Sent range</button>
+                </div>
+    </form>
+    <form class="someclass" action="" method="post">{% csrf_token %}
+
+                <div>
+
 
                         {{ time_chose }}
 
 
                     <p>{{ date_chose }}</p>
-
-                 {{ range_form.as_p}}
-                    <button type="submit">Sent</button>
-                </div>
-    </form>
-    <form action="" method="post">{% csrf_token %}
-
-                <div>
-
                  {{ forma.as_p}}
-                    <button type="submit">Sent</button>
+                    <button type="submit">Sent user</button>
                 </div>
     </form>
 {% endblock %}

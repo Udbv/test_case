@@ -24,8 +24,7 @@ class DateForm(forms.ModelForm):
         model = Rangdate
 
         exclude = [""]
-u = int(8)
-class FormTime(forms.Form):
+
     def gen_time(start, end):
         return ((str(i), str(i)+"-"+str(i+1)) for i in range(start, end + 1))
 
@@ -33,16 +32,21 @@ class FormTime(forms.Form):
     TIME = (('1', '9-10',), ('2', '10-11',), ('3', '11-12',), ('4', '12-13',), ('5', '14-15',))
     Choose_time = forms.ChoiceField(widget=forms.RadioSelect, choices=t)
 
-
-class FormDate(forms.Form):
     date_start = start_date[0]
     date_end = 20
     month = str(start_date[1])
     year = str(start_date[2])
 
     def gen(start, end, month, year):
-           return ((str(i), str(i) + month + year) for i in range(start, end + 1))
-    d=list(gen(date_start,date_end,month, year))
+        return ((str(i), str(i) + month + year) for i in range(start, end + 1))
+
+    d = list(gen(date_start, date_end, month, year))
+
+    Choose_date = forms.ChoiceField(widget=forms.RadioSelect, choices=d, )
+#class FormTime(forms.Form):
 
 
-    Choose_date = forms.ChoiceField(widget=forms.RadioSelect, choices=d,)
+
+
+#class FormDate(forms.Form):
+

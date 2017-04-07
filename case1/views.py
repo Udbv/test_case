@@ -7,29 +7,28 @@ def test(request):
     name = "Udovenko"
     range_form = DateForm(request.POST or None)
     forma = NameForm(request.POST or None)
-    date_chose = FormDate
-    time_chose = FormTime
+   # date_chose = FormDate
+    #time_chose = FormTime
 
 
     ra={}
     if request.POST:
         print(request.POST)
 
-        ra['date_start']=request.POST.get('date_start')
-        ra['date_end'] = request.POST.get('date_start')
-        ra['time_start'] = request.POST.get('date_start')
-        ra['time_end'] = request.POST.get('date_start')
+
     if forma.is_valid():
         forma.save()
+    if range_form.is_valid():
+        range_form.save()
 
-    return render(request, 'simple_task/home.html', locals(),{'ra':ra})
+    return render(request, 'simple_task/home.html', locals())
 
 def post(self, request):
     range_form = DateForm(request.POST or None)
     if range_form.is_valid():
         range_form.save()
 
-        return render(request, 'simple_task/home.html', {'form': range_form})
+        return render(request, 'simple_task/home.html', locals(),{'form': range_form})
 
 
 class MyView(FormView):
