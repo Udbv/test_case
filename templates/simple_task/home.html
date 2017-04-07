@@ -8,12 +8,17 @@
 {% extends 'simple_task/base.html' %}
 
 {% block title %}Login{% endblock %}
-asd
+
 {% block content %}
   <h2>Home</h2>
     <form action="" method="post">{% csrf_token %}
 
                 <div>
+
+                        {{ time_chose }}
+
+
+                    <p>{{ date_chose }}</p>
 
                  {{ range_form.as_p}}
                     <button type="submit">Sent</button>
