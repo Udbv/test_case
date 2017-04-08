@@ -15,12 +15,27 @@
 
 
                 <div>
+
                  {{ range_form.as_p}}
                     <button type="submit">Sent range</button>
                 </div>
     </form>
+  <h2>NAme and email</h2>
 
-    </form>
+<form class="someclass" action="" method="post">{% csrf_token %}
+
+                <div>
+
+
+                        {{ time_chose }}
+
+
+                    <p>{{ forma }}</p>
+                 {{ form_class}}
+                    <button type="submit">Sent user</button>
+                </div>
+</form>
+
 {% endblock %}
 
 

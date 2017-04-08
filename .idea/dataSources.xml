@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="db" uuid="8651e7e1-6d49-4eea-8e22-e3d8aeb75023">
+    <data-source source="LOCAL" name="Django default" uuid="320a2e9a-35f5-4440-ac6f-d0a4b7422342">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
-      <remarks>SQLite</remarks>
+      <remarks>$PROJECT_DIR$/test_case/settings.py</remarks>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\bohdan\PycharmProjects\test_case\db.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\Dhub\PycharmProjects\test_case\db.sqlite3</jdbc-url>
+      <driver-properties>
+        <property name="enable_load_extension" value="true" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="db.sqlite3" uuid="6a8d8538-1de8-4aa3-bd74-912c9eb43ab7">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db.sqlite3</jdbc-url>
+      <driver-properties>
+        <property name="enable_load_extension" value="true" />
+      </driver-properties>
     </data-source>
   </component>
 </project>
