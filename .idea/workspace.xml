@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94626d65-d40b-4cf8-b0fc-8e99ca091ddd" name="Default" comment="asd">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/test_case.iml" afterPath="$PROJECT_DIR$/.idea/test_case.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case1/forms.py" afterPath="$PROJECT_DIR$/case1/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case1/models.py" afterPath="$PROJECT_DIR$/case1/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case1/urls.py" afterPath="$PROJECT_DIR$/case1/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case1/views.py" afterPath="$PROJECT_DIR$/case1/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/simple_task/home.html" afterPath="$PROJECT_DIR$/templates/simple_task/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/simple_task/name_form.html" afterPath="$PROJECT_DIR$/templates/simple_task/name_form.html" />
-    </list>
+    <list default="true" id="94626d65-d40b-4cf8-b0fc-8e99ca091ddd" name="Default" comment="asd" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
